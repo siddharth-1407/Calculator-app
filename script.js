@@ -10,7 +10,7 @@ buttons.forEach((btn) => {
 			display.textContent = e.target.value;
 		} else {
 			display.textContent = display.textContent + e.target.value;
-			display.textContent = display.textContent.replace(/[*]/g, 'x');
+		
 		}
 	});
 });
@@ -33,7 +33,7 @@ resetBtn.addEventListener('click', () => {
 
 evaluateBtn.addEventListener('click', () => {
 	try {
-		display.textContent = eval(display.textContent.replace(/x/g, '*')).toLocaleString('en-US');
+		display.textContent = eval(display.textContent).toLocaleString('en-US');
 	} catch (error) {
 		display.textContent = 'error!';
 	}
