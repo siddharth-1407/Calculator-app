@@ -147,7 +147,7 @@ input[type='radio'] {
 	height: 53%;
 	position: absolute;
 	top: 50%;
-	left: 0rem;
+	left: 0.36rem;
 	transform: translateY(-50%);
 	border-radius: 50px;
 	background-color: var(--danger-key-bg);
