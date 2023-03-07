@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-1">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="main.css" />
+
+		<title>Frontend Mentor | Calculator app</title>
+	</head>
+	<body>
+		<main class="container">
+			<div class="head">
+				<h1>calc</h1>
+				<div class="theme">
+					<span>Theme</span>
+					<form id="toggleTheme">
+						<div class="form-labels">
+							<label for="theme-1">1</label>
+							<label for="theme-2">2</label>
+							<label for="theme-3">3</label>
+						</div>
+						<div class="form-inputs">
+							<input type="radio" name="theme" value="1" id="theme-1" />
+							<input type="radio" name="theme" value="2" id="theme-2" />
+							<input type="radio" name="theme" value="3" id="theme-3" />
+							<div class="slider"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="form-control">
+				<span id="input-field" class="input-field"></span>
+			</div>
+			<section class="num-pad">
+				<div class="row">
+					<button class="js_btn btn btn-baseClr flex-1" value="7">7</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="8">8</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="9">9</button>
+					<button id="delete" class="btn primary flex-1">DEL</button>
+				</div>
+				<div class="row">
+					<button class="js_btn btn btn-baseClr flex-1" value="4">4</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="5">5</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="6">6</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="+">+</button>
+				</div>
+				<div class="row">
+					<button class="js_btn btn btn-baseClr flex-1" value="1">1</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="2">2</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="3">3</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="-">-</button>
+				</div>
+				<div class="row">
+					<button class="js_btn btn btn-baseClr flex-1" value=".">.</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="0">0</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="/">/</button>
+					<button class="js_btn btn btn-baseClr flex-1" value="*">x</button>
+				</div>
+				<div class="row">
+					<button id="reset" class="btn flex-1 primary">RESET</button>
+					<button id="evaluate" class="btn flex-1 danger">=</button>
+				</div>
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+			>. Coded by <a href="#">Siddharth</a>.
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
